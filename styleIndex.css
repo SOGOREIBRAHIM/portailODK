@@ -1,0 +1,195 @@
+/* les code General */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    height: auto;
+}
+
+/* mettre les elts sur la meme ligne */
+.line_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ /* pour centrer le tour */
+.container{
+    width: auto;
+    height: auto;
+    margin: 0 250px;
+}
+/* fin de code general */
+
+/* debut du menu */
+header{
+    background-color: rgb(248, 165, 106);
+    height: 100px;
+}
+
+/* Mettre en ligne  */
+header nav ul li{
+    display: inline-block;
+}
+
+nav ul{
+    text-decoration: none;
+    margin-left: 100px;  
+    margin-top: -60px;  
+}
+
+nav ul li{
+    margin-left: 30px;
+    
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #2a1804;
+    font-weight: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+   color: #fff;
+}
+
+.connexion{
+    float: right;
+}
+
+.navbtn{
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: #fc6d06;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100%;
+    line-height: 50px;
+    border-radius: 40px;
+    margin: -15px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbtn:hover{
+    background: #538a95;
+}
+
+nav a .img{
+    margin-top: 5px;
+}
+/* fin du menu */
+
+ /* dabut du section1 */
+ .card-img{
+    margin-top: 80px;
+ }
+
+ .body-texte{
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 600px;
+    height: auto;
+ }
+
+ .texte1{
+    font-size: 60px;
+    color: #2a1804;
+ }
+
+ .texte2{
+    font-size: 80px;
+    color: #ca7334;
+ }
+
+ .texte3{
+    font-size: 60px;
+    color: #ca7334;
+ }
+
+ .texte4{
+    margin-top: 100px;
+    font-size: 40px;
+    color: #2a1804;
+ }
+
+ .texte5{
+    font-size: 60px;
+    color: #2a1804;
+ }
+ /* <!-- fin du section1 --> */
+
+ /* <!-- debut du section2 --> */
+ .btn-body{
+    margin-top: 60px;
+    width: 550px;
+    height: 80px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    font-weight: 500;
+ }
+
+ .btn-body:hover{
+    background: #ca7334;
+ }
+
+ .btn-body a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px; 
+ }
+
+ /* <!-- fin du section2 --> */
+
+ /* <!-- debut du section3 --> */
+ .body-texte2{
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 900px;
+    height: 465px;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px 0 0 10px;
+ }
+
+ .text1{
+    font-size: 50px;
+    color: #fff;
+ }
+
+ .text2{
+    font-size: 60px;
+    color: #ca7334;
+ }
+
+ .text3{
+    margin-top: 80px;
+    font-size: 50px;
+    color: #fff;
+ }
+
+ .text4{
+    font-size: 40px;
+    color: #ca7334;
+ }
+
+
+ /* <!-- debut du section4 --> */
+ .card-footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 350px;
+    background-color: #ca7334;
+}
+
+ /* <!-- fin du section4 --> */
+

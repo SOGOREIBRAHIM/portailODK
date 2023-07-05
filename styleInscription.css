@@ -1,0 +1,144 @@
+les code General
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    height: auto;
+}
+
+/* mettre les elts sur la meme ligne */
+.line_form{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+ }
+
+ /* pour centrer le tour */
+.container{
+    width: auto;
+    height: auto;
+    margin: 0 250px;
+}
+/* fin de code general */
+
+/* debut du menu */
+header{
+    background-color: rgb(248, 165, 106);
+    height: 100px;
+}
+
+/* Mettre en ligne  */
+header nav ul li{
+    display: inline-block;
+}
+
+nav ul{
+    text-decoration: none;
+    margin-left: 100px;  
+    margin-top: -60px;  
+}
+
+nav ul li{
+    margin-left: 30px;
+    
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #2a1804;
+    font-weight: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+   color: #fff;
+}
+
+.connexion{
+    float: right;
+}
+
+.navbtn{
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: #fc6d06;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100%;
+    line-height: 50px;
+    border-radius: 40px;
+    margin: -15px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbtn:hover{
+    background: #538a95;
+}
+
+nav a .img{
+    margin-top: 5px;
+}
+/* fin du menu */
+
+.form_input{
+    width: 600px;
+    height: 60px;
+    margin: 10px 30px 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ca7334;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.form_input:focus{
+    border-color: #02b8dd;
+}
+
+.name{
+    color: red;
+}
+
+.lastname{
+    color: red;
+}
+
+.form_btn{
+    margin: 30px auto;
+    width: 220px;
+    height: 60px;
+    background: #ca7334;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100%;
+    line-height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form_btn:hover{
+    background: #538a95;
+}
+
+.card-header{
+    font-size: 60px;
+}
+
+.form_file{
+    color: #ca7334;
+    font-size: 35px;
+    margin-top: 10px;
+}
