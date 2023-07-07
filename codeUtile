@@ -1,0 +1,3 @@
+$nombreAleatoire = rand(1, 100);
+echo $nombreAleatoire;
+

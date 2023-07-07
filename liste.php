@@ -7,7 +7,7 @@
     $bddPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $prepareStatement = $bddPDO->prepare("SELECT * FROM apprenant");
-    $reponseIsOK = $prepareStatement ->execute();
+    $prepareStatement ->execute();
     $apprenant = $prepareStatement->fetchAll();
     ?>
 
@@ -42,16 +42,18 @@
             <div class="col-md-3 my-5">
                 <div class="card w-100">
                     <div class="card-body">  
-                    <img style="border-radius:5%; margin-left: 10px;" src="data:image/jpg;charset=utf8;base64, 
-                     <?php echo base64_encode($app['photo']); ?>" width="250px" height="250px" />
-                     <h5 class="nom">Nom : <?= $app['nom'] ?> </h5>   
-                     <h5 class="prenom">Prenom  : <?= $app['prenom'] ?> </h5> 
-                     <h5 class="details"> <?php echo "<a href=voirPlus.php?id=".$app['id'].">" ?>Voir plus</a></h5> 
+                        <img style="border-radius:5%; margin-left: 10px;" src="data:image/jpg;charset=utf8;base64, 
+                        <?php echo base64_encode($app['photo']); ?>" width="250px" height="250px" />
+                        <h5 class="nom">Nom : <?= $app['nom'] ?> </h5>   
+                        <h5 class="prenom">Prenom  : <?= $app['prenom'] ?> </h5> 
+                        <h5 class="details"> <?php echo "<a href=voirPlus.php?id=".$app['id'].">" ?>Voir plus 
+                        </a> <?php echo "<a href=details.php?id=".$app['id'].">" ?><img class="img-view" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FD7E14/visible--v1.png" alt="visible--v1"/></a> </h5> 
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
         </div>
+        
     </div>
     </section>
     <section>

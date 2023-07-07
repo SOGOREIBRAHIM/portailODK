@@ -2,8 +2,18 @@
 try {
     $bddPDO = new PDO('mysql:host=localhost;dbname=portail', 'root', "");
     $bddPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    $matriule="";
     if (isset($_POST['ajouter'])) {
+
+        function generer($char){
+            $caractere = "abcdefghig1234567890";
+            $indexMax = strlen(0, $caractere);
+            for ($i=0 ; $i < $caractere ; $i++ ) { 
+                $index = rand($indexMax);
+                $matriule.= substr($caractere,$index, 1 );
+                return $matriule;
+            }
+        }
 
         $matriule = $_POST['matricule'];
 

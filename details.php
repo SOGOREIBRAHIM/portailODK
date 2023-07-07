@@ -3,14 +3,14 @@
 <head>
 
     <?php 
-        $bddPDO = new PDO('mysql:host=localhost;dbname=portail', 'root', "");
-        $bddPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $bddPDO = new PDO('mysql:host=localhost;dbname=portail', 'root', "");
+    $bddPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $id = $_REQUEST['id'];
+    $id = $_REQUEST['id'];
 
-        $prepareStatement = $bddPDO->prepare("SELECT * FROM apprenant WHERE id=$id ");
-        $prepareStatement->execute();
-        $apprenant = $prepareStatement->fetchAll();
+    $prepareStatement = $bddPDO->prepare("SELECT * FROM apprenant WHERE id=$id ");
+    $reponseIsOK = $prepareStatement ->execute();
+    $apprenant = $prepareStatement->fetchAll();
     ?>
 
     <meta charset="UTF-8">
@@ -58,10 +58,6 @@
                     <h5 class="text"><span>Annee de Certification  :</span> <?= $app['anneeCertification'] ?> </h5>
                 </div>  
             </div>
-            <div class="line_form">
-                <a class="icon" href="supprimer"><img width="60" height="60" src="https://img.icons8.com/ios-glyphs/30/FD7E14/filled-trash.png" alt="filled-trash"/></a>
-                <a class="icon" href="modifier.php?id=<?= $app['id']?>"><img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/FD7E14/edit--v1.png" alt="edit--v1"/></a>
-            </div> 
         </div>
     </div>
     <?php endforeach; ?>

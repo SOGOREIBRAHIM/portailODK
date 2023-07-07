@@ -100,8 +100,9 @@ nav a .img{
 
 /* debut du section 2 */
 .row{
-    background:  rgb(245, 241, 238);
+    /* background:  rgb(245, 241, 238); */
     border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .nom{
@@ -137,7 +138,7 @@ nav a .img{
  /* <!-- fin du section4 --> */
 
  .text-body{
-    padding: 45px 0 0 150px;
+    padding: 45px 0 0 250px;
     /* padding: 90px; */
  }
  .text{
@@ -152,4 +153,10 @@ nav a .img{
 
  .icon{
     padding: 30px 50px;
+ }
+
+ .img-view{
+    max-width: 70vw!important;
+    margin-left: 60px;
+
  }

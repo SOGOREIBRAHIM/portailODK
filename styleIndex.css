@@ -159,6 +159,7 @@ nav a .img{
     background-color: #1e1e1e;
     padding: 40px;
     border-radius: 10px 0 0 10px;
+    /* box-shadow: 0 0 10px rgba(224, 9, 9, 0.2); */
  }
 
  .text1{
